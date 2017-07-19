@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>fengmap.MapOptions - 蜂鸟视图 JavaScript SDK v2.0.10</title>
+  
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.ico">
+</head>
+<body class="yui3-smart" _assetsPath="../assets">
+ <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <a class="navbar-brand mainlogo" href="https://www.fengmap.com/docs/js/v2.0.10_beta/index.html">
+             
+            <img alt="蜂鸟视图 JavaScript SDK v2.0.10" src="../assets/css/logo.png" title="蜂鸟视图 JavaScript SDK v2.0.10">
+            
+                蜂鸟视图 JavaScript SDK v2.0.10
+          </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                 <ul class="nav navbar-nav">
+                    
+                    <li><a href="https://www.fengmap.com">蜂鸟云平台</a>
+                    </li>
+                    
+                </ul>
+               <div class="navbar-form navbar-right filterAPi" autocomplete="off">
+                <input type="text" id='txtSearchAPI' class="form-control search-query" placeholder="搜索" />
+                 <ul id="filterList" class="filterItems dropdown-menu" role="menu"></ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="sidebar">
+    <h3>模块 / 类</h3>
+        <div id="api-tabview-filter">
+            <input id='txtSearch' type="search" class="form-control" placeholder="过滤模块或类">
+        </div>
+        <dl id="sidebar_list">
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/FMControls.html">FMControls</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/fengmap.controlOptions.html">fengmap.controlOptions</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.controlPositon.html">fengmap.controlPositon</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.controlOffset.html">fengmap.controlOffset</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.buttonGroupsControl.html">fengmap.buttonGroupsControl</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.scrollGroupsControl.html">fengmap.scrollGroupsControl</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMPopInfoWindow.html">fengmap.FMPopInfoWindow</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.toolControl.html">fengmap.toolControl</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.zoomControl.html">fengmap.zoomControl</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/FMEnum.html">FMEnum</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMDirection.html">fengmap.FMDirection</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMLineType.html">fengmap.FMLineType</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMNodeType.html">fengmap.FMNodeType</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMViewMode.html">fengmap.FMViewMode</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/FMMap.html">FMMap</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMMap.html">fengmap.FMMap</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMHeatMap.html">fengmap.FMHeatMap</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMLineMarker.html">fengmap.FMLineMarker</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMSegment.html">fengmap.FMSegment</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.MapOptions.html">fengmap.MapOptions</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMMapCoord.html">fengmap.FMMapCoord</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMScreenCoord.html">fengmap.FMScreenCoord</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMMapGestureEnableController.html">fengmap.FMMapGestureEnableController</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/FMNode.html">FMNode</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMFacility.html">fengmap.FMFacility</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMImageMarker.html">fengmap.FMImageMarker</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMLabel.html">fengmap.FMLabel</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMLocationMarker.html">fengmap.FMLocationMarker</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMStroeModel.html">fengmap.FMStroeModel</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMPolygonMarker.html">fengmap.FMPolygonMarker</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMTextMarker.html">fengmap.FMTextMarker</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMGroup.html">fengmap.FMGroup</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMFacilityLayer.html">fengmap.FMFacilityLayer</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMImageMarkerLayer.html">fengmap.FMImageMarkerLayer</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMLabelLayer.html">fengmap.FMLabelLayer</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMLocationMarkerLayer.html">fengmap.FMLocationMarkerLayer</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMTextMarkerLayer.html">fengmap.FMTextMarkerLayer</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMNode.html">fengmap.FMNode</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/FMSearchAnalyser.html">FMSearchAnalyser</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMSearchAnalyser.html">fengmap.FMSearchAnalyser</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMSearchRequest.html">fengmap.FMSearchRequest</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/Navigation.html">Navigation</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMNaviAnalyser.html">fengmap.FMNaviAnalyser</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMNaviModule.html">fengmap.FMNaviModule</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMNaviResult.html">fengmap.FMNaviResult</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMRouteCalcuResult.html">fengmap.FMRouteCalcuResult</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMNavigation.html">fengmap.FMNavigation</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.NaviOptions.html">fengmap.NaviOptions</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+        </dl>
+</div>
+   
+    <div class="stdoc-content">
+        <div class="apidocs">
+            <div id="docs-main">
+                <div class="content">
+                    <div class="page-header">
+    <h1>fengmap.MapOptions <small>类</small></h1>
+</div>
+ <div class="well well-small sign-left3">
+      <div class="stdoc-code"><p>MapOptions 是设置加载地图地址，主题数据地址，是否使用静态数据等参数的类</p>
+</div>
+ </div>
+
+<div class="well well-small sign-left2 container-fluid" id="classesItems">
+    <div class="row">
+    
+        <div class="index-section methods col-sm-4">
+            <h3>方法</h3>
+            
+        </div>
+    
+        <div class="index-section properties col-sm-4">
+            <h3>属性</h3>
+            
+        </div>
+    
+        <div class="index-section events col-sm-4">
+            <h3>事件</h3>
+            
+        </div>
+    </div>
+</div>
+
+<div>
+    <ul id="itemTab" class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#class">详情</a></li>
+        
+        
+        
+    </ul>
+
+    <div class="tab-content">
+        <div id="class" class="tab-pane active">
+            <div class="well well-small classDetail sign-left1">
+            
+
+            
+
+             
+                <!-- <div class="foundat">
+                  Defined in: <a href="../files/.._jssdk_src_fengmap_MapOptions.js.html#l1"><code>..\jssdk\src\fengmap\MapOptions.js:1</code></a> 
+                </div>-->
+             
+
+            
+                
+                    模块: <a href="../modules/FMMap.html">FMMap</a>
+                
+            
+
+            
+        </div>
+
+        
+            
+                <div class="constructor">
+                    <h2>实例化</h2>
+                    <div id="method_fengmap.MapOptions" class="method item">
+    <h3 class="name">fengmap.MapOptions</h3>
+    <code>
+    fengmap.MapOptions
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        options
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        modelSelectedEffect
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_fengmap_MapOptions.js.html#l1"><code>..\jssdk\src\fengmap\MapOptions.js:1</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">options</code>
+                       <td> <span class="type">Object</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>地图参数配置</p>
+
+                    </div>
+
+                    
+                        <table class="table table-bordered">
+                         <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+                           
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">container</code>
+                                   <td> <span class="type">Object</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>加载地图html容器,必须的设置。</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">appName</code>
+                                   <td> <span class="type">String</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>必须的设置,可通过蜂鸟云平台-》我的应用-》创建应用</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">key</code>
+                                   <td> <span class="type">String</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>必须的设置,key可通过蜂鸟云平台-》我的应用-》创建应用-》添加key添加</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">mapServerURL</code>
+                                   <td> <span class="type">String</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>设置地图路径，跟useStatic设置有关,默认是从蜂鸟视图服务器上获取地图</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">mapThemeURL</code>
+                                   <td> <span class="type">String</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>设置主题路径</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">defaultThemeName</code>
+                                   <td> <span class="type">String</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>设置默认主题名称，默认为‘2001’，设置后主题对应文件夹路径为：options.mapThemeURL+options.defaultThemeName。</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">defaultVisibleGroups</code>
+                                   <td> <span class="type">Array</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>初始显示楼层ID数组。</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">defaultFocusGroup</code>
+                                   <td> <span class="type">Int</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>初始聚焦楼层ID。</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">focusAlphaMode</code>
+                                   <td> <span class="type">Boolean</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>是否对不聚焦图层启用透明设置 默认为true</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">focusAlpha</code>
+                                   <td> <span class="type">Float</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>对不聚焦图层启用透明设置 默认为0.1。值范围为 0-1。此属性只有当options.focusAlphaMode = ture是有效</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">focusAnimateMode</code>
+                                   <td> <span class="type">Boolean</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>是否开启聚焦图层切换的动画显示。默认true</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">defaultViewMode</code>
+                                   <td> <span class="type"><a href="..\classes\fengmap.FMViewMode.html" class="crosslink">fengmap.FMViewMode</a></span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>初始二维还是三维状态，fengmap.FMViewMode.MODE_2D|fengmap.FMViewMode.MODE_3D ,默认3维显示。</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">viewModeAnimateMode</code>
+                                   <td> <span class="type"><a href="..\classes\fengmap.FMViewMode.html" class="crosslink">fengmap.FMViewMode</a></span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>是否启用2D，3D模式切换时的动画效果。默认true</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">moveToAnimateMode</code>
+                                   <td> <span class="type">Boolean</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>是否启用拾取地图物体时相机的移动动画效果。 默认true。</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">defaultControlsPose</code>
+                                   <td> <span class="type">JSON</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>设置地图默认状态。值可为方向枚举、角度值、或特定角度的Json对象的任意一种。地图加载后可通过接口fengmap.MapUtil.getControlInfo()查看。</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">defaultMapScaleLevel</code>
+                                   <td> <span class="type">Number</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>设置地图初始显示比例尺级别。范围为1-29之间的整数值。如29级的比例尺为1:1厘米。</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">mapScaleLevelRange</code>
+                                   <td> <span class="type">Array</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>设置比例尺级别可缩放范围， 通常室内地图使用到的范围为16级到23级。即：[16,23]。</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">defaultMapScale</code>
+                                   <td> <span class="type">Number</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>设置地图初始显示自定义比例尺级别。如设置1000，为1:1000（厘米）的显示状态。defaultMapScale的优先级比defaultMapScaleLevel的优先级高。</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">mapScaleRange</code>
+                                   <td> <span class="type">Array</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>设置自定义比例尺范围，单位（厘米），如[200,4000]。</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">compassOffset</code>
+                                   <td> <span class="type">Array</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>设置初始指南针的偏移量，默认为[10,20],左：10px,上：20px。</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">compassSize</code>
+                                   <td> <span class="type">Numbumer</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>设置指南针大小,默认64px。</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">defaultGroupSpace</code>
+                                   <td> <span class="type">Number</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>设置初始地图的楼层间距,默认从数据中读取楼层高度.</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">enabledPanRange</code>
+                                   <td> <span class="type">Boolean</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>是否开启平移地图范围限制,默认为true</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">defaultBackgroundColor</code>
+                                   <td> <span class="type">Boolean</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>默认背景颜色: 0xff00ff, &#39;#00ff00&#39;</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">defaultBackgroundAlpha</code>
+                                   <td> <span class="type">Boolean</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>默认背景透明度: 0 ~ 1</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                        </table>
+                        </td>
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">modelSelectedEffect</code>
+                       <td> <span class="type">Boolean</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>支持单击模型高亮，false为单击时模型不高亮</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+
+    
+        <div class="example">
+            <h4>示例:</h4>
+            <ul class="nav nav-tabs example-list">
+                
+                <li role="presentation"  class="active"  _no='0'> <a>参数设置</a></li>
+                
+            </ul>
+
+            <div class="example-content ">
+                <div class="stdoc-code"><pre class="code prettyprint"><code>var mapOpt = new fengmap.MapOptions({
+    container : $(&#39;#map-container&#39;)[0],     //渲染dom
+      mapServerURL:&#39;./data/&#39; + fmapID,      //地图数据位置
+      mapThemeURL : &#39;./data/theme&#39;,        //主题数据位置
+
+      key:&#39;&#39;,                              //输入密钥
+      appName:&#39;&#39;,                          //输入与密钥对应的应用名称
+
+      focusAlphaMode: true,              //对不可见图层启用透明设置 默认为true
+      focusAnimateMode: false,            //开启聚焦层切换的动画显示
+      focusAlpha:0.1,                     //对不聚焦图层启用透明设置，当focusAlphaMode = true时有效
+      viewModeAnimateMode:false,         //开启2维，3维切换的动画显示
+      moveToAnimateMode:false,           //地图定位跳转动画设置
+      defaultScaleLevel:3,               //设置默认显示级别
+      maxScaleLevel:3,                   //设置地图最大显示级别
+      minScaleLevel:6,                   //设置地图最小显示级别 
+      modelSelectedEffect:true,          //支持单击模型高亮，false为单击时模型不高亮
+      defaultVisibleGroups:[1],           //初始显示楼层，默认[1]
+      defaultFocusGroup: 1,               //初始聚焦楼层,默认1
+      defaultViewMode:fengmap.FMViewMode.MODE_2D, //初始二维还是三维状态,默认是3D状态
+
+      compassOffset:[5,20], //初始指南针的偏移量
+      compassSize: 48,       //指南针大小默认配置
+
+      defaultGroupSpace: 10, //设置初始地图的楼层间距
+      defaultThemeName:&#39;2002&#39;,//设置默认主题名称,主题
+
+      //设置地图默认状态。defaultControlsPose值可为方向枚举、角度值、或特定角度的Json对象的任意一种。如设置二维模式下正北显示：
+      defaultControlsPose: fengmap.FMDirection.NORTH  //方向枚举型。可设置正南、正北、正东、正西、东南、西南等方向值。具体可参考fengmap.ControlsPoseEnum类。
+      //defaultControlsPose: 90,     //角度值。
+
+      //如果需自定义地图角度，可使用如下JSON对象。此JSON对象用户可根据在浏览器中手动拖动的地图状态，然后在调试界面内使用fengmap.MapUtil.getControlInfo() 获取。
+//            defaultControlsPose: {
+//                target:"66.370,150.000,-38.260",
+//                position:"66.370,698.433,-38.261"
+//            }
+});</code></pre>
+</div>
+            </div>
+
+            <!-- <button class="btn btn-info btn-viewDemo" type="button">view demo</button>
+            <button class="btn btn-info btn-editDemo" type="button">edit code</button> -->
+        </div>
+    
+</div>
+
+                </div>
+            
+        </div>
+
+        
+
+        
+
+        
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<a id="gotoTop" class='well well-small' href='#'>
+    Top
+</a>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/config.js"></script>
+<script src="../assets/js/doc.js"></script>
+</body>
+</html>

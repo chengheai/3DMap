@@ -1,0 +1,6675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>fengmap.FMMap - 蜂鸟视图 JavaScript SDK v2.0.10</title>
+  
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.ico">
+</head>
+<body class="yui3-smart" _assetsPath="../assets">
+ <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <a class="navbar-brand mainlogo" href="https://www.fengmap.com/docs/js/v2.0.10_beta/index.html">
+             
+            <img alt="蜂鸟视图 JavaScript SDK v2.0.10" src="../assets/css/logo.png" title="蜂鸟视图 JavaScript SDK v2.0.10">
+            
+                蜂鸟视图 JavaScript SDK v2.0.10
+          </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                 <ul class="nav navbar-nav">
+                    
+                    <li><a href="https://www.fengmap.com">蜂鸟云平台</a>
+                    </li>
+                    
+                </ul>
+               <div class="navbar-form navbar-right filterAPi" autocomplete="off">
+                <input type="text" id='txtSearchAPI' class="form-control search-query" placeholder="搜索" />
+                 <ul id="filterList" class="filterItems dropdown-menu" role="menu"></ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="sidebar">
+    <h3>模块 / 类</h3>
+        <div id="api-tabview-filter">
+            <input id='txtSearch' type="search" class="form-control" placeholder="过滤模块或类">
+        </div>
+        <dl id="sidebar_list">
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/FMControls.html">FMControls</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/fengmap.controlOptions.html">fengmap.controlOptions</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.controlPositon.html">fengmap.controlPositon</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.controlOffset.html">fengmap.controlOffset</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.buttonGroupsControl.html">fengmap.buttonGroupsControl</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.scrollGroupsControl.html">fengmap.scrollGroupsControl</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMPopInfoWindow.html">fengmap.FMPopInfoWindow</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.toolControl.html">fengmap.toolControl</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.zoomControl.html">fengmap.zoomControl</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/FMEnum.html">FMEnum</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMDirection.html">fengmap.FMDirection</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMLineType.html">fengmap.FMLineType</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMNodeType.html">fengmap.FMNodeType</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMViewMode.html">fengmap.FMViewMode</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/FMMap.html">FMMap</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMMap.html">fengmap.FMMap</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMHeatMap.html">fengmap.FMHeatMap</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMLineMarker.html">fengmap.FMLineMarker</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMSegment.html">fengmap.FMSegment</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.MapOptions.html">fengmap.MapOptions</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMMapCoord.html">fengmap.FMMapCoord</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMScreenCoord.html">fengmap.FMScreenCoord</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMMapGestureEnableController.html">fengmap.FMMapGestureEnableController</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/FMNode.html">FMNode</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMFacility.html">fengmap.FMFacility</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMImageMarker.html">fengmap.FMImageMarker</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMLabel.html">fengmap.FMLabel</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMLocationMarker.html">fengmap.FMLocationMarker</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMStroeModel.html">fengmap.FMStroeModel</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMPolygonMarker.html">fengmap.FMPolygonMarker</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMTextMarker.html">fengmap.FMTextMarker</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMGroup.html">fengmap.FMGroup</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMFacilityLayer.html">fengmap.FMFacilityLayer</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMImageMarkerLayer.html">fengmap.FMImageMarkerLayer</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMLabelLayer.html">fengmap.FMLabelLayer</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMLocationMarkerLayer.html">fengmap.FMLocationMarkerLayer</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMTextMarkerLayer.html">fengmap.FMTextMarkerLayer</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMNode.html">fengmap.FMNode</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/FMSearchAnalyser.html">FMSearchAnalyser</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMSearchAnalyser.html">fengmap.FMSearchAnalyser</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMSearchRequest.html">fengmap.FMSearchRequest</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/Navigation.html">Navigation</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMNaviAnalyser.html">fengmap.FMNaviAnalyser</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMNaviModule.html">fengmap.FMNaviModule</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMNaviResult.html">fengmap.FMNaviResult</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMRouteCalcuResult.html">fengmap.FMRouteCalcuResult</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMNavigation.html">fengmap.FMNavigation</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.NaviOptions.html">fengmap.NaviOptions</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+        </dl>
+</div>
+   
+    <div class="stdoc-content">
+        <div class="apidocs">
+            <div id="docs-main">
+                <div class="content">
+                    <div class="page-header">
+    <h1>fengmap.FMMap <small>类</small></h1>
+</div>
+ <div class="well well-small sign-left3">
+      <div class="stdoc-code"><p>FMMap 是加载场景、显示模型、遍历模型等的主类，一个页面中必须且至少包含一个FMMap对象</p>
+</div>
+ </div>
+
+<div class="well well-small sign-left2 container-fluid" id="classesItems">
+    <div class="row">
+    
+        <div class="index-section methods col-sm-4">
+            <h3>方法</h3>
+            
+            <ul class="index-list methods">
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_addLocationMarker" data-tablink="addLocationMarker">addLocationMarker</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_callAllLayersByAlias" data-tablink="callAllLayersByAlias">callAllLayersByAlias</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_clearLineMark" data-tablink="clearLineMark">clearLineMark</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_coordMapToScreen" data-tablink="coordMapToScreen">coordMapToScreen</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_coordScreenToMap" data-tablink="coordScreenToMap">coordScreenToMap</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_drawLineMark" data-tablink="drawLineMark">drawLineMark</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_flash" data-tablink="flash">flash</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_fullScreenAvaliable" data-tablink="fullScreenAvaliable">fullScreenAvaliable</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_getDatasByAlias" data-tablink="getDatasByAlias">getDatasByAlias</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_getFMGroup" data-tablink="getFMGroup">getFMGroup</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_getGestureEnableController" data-tablink="getGestureEnableController">getGestureEnableController</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_getLayerByAlias" data-tablink="getLayerByAlias">getLayerByAlias</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_getScalelevelValueByVectics" data-tablink="getScalelevelValueByVectics">getScalelevelValueByVectics</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_moveTo" data-tablink="moveTo">moveTo</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_moveToCenter" data-tablink="moveToCenter">moveToCenter</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_openMapById" data-tablink="openMapById">openMapById</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_pickFilterFunction" data-tablink="pickFilterFunction">pickFilterFunction</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_removeLocationMarker" data-tablink="removeLocationMarker">removeLocationMarker</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_rotateTo" data-tablink="rotateTo">rotateTo</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_scaleLevelIn" data-tablink="scaleLevelIn">scaleLevelIn</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_scaleLevelOut" data-tablink="scaleLevelOut">scaleLevelOut</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_search" data-tablink="search">search</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_selectNull" data-tablink="selectNull">selectNull</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_setBackgroundColor" data-tablink="setBackgroundColor">setBackgroundColor</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_setMapScaleLevelRange" data-tablink="setMapScaleLevelRange">setMapScaleLevelRange</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_setMapScaleRange" data-tablink="setMapScaleRange">setMapScaleRange</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_setModelSelectColor" data-tablink="setModelSelectColor">setModelSelectColor</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_setScaleLevelLimit" data-tablink="setScaleLevelLimit">setScaleLevelLimit</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_storeSelect" data-tablink="storeSelect">storeSelect</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_tiltTo" data-tablink="tiltTo">tiltTo</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_zoomIn" data-tablink="zoomIn">zoomIn</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_zoomOut" data-tablink="zoomOut">zoomOut</a>
+
+                        
+                        
+                    </li>
+                
+            </ul>
+            
+        </div>
+    
+        <div class="index-section properties col-sm-4">
+            <h3>属性</h3>
+            
+            <ul class="index-list properties">
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_backgroundColor" data-tablink="backgroundColor">backgroundColor</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_center" data-tablink="center">center</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_focusGroupID" data-tablink="focusGroupID">focusGroupID</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_fullScreen" data-tablink="fullScreen">fullScreen</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_groupIDs" data-tablink="groupIDs">groupIDs</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_groupSpace" data-tablink="groupSpace">groupSpace</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_layerLocalHeight" data-tablink="layerLocalHeight">layerLocalHeight</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_lineStyle" data-tablink="lineStyle">lineStyle</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_mapScale" data-tablink="mapScale">mapScale</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_mapScaleLevel" data-tablink="mapScaleLevel">mapScaleLevel</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_maxScaleLevel" data-tablink="maxScaleLevel">maxScaleLevel</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_maxTitleAngle" data-tablink="maxTitleAngle">maxTitleAngle</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_maxX" data-tablink="maxX">maxX</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_maxY" data-tablink="maxY">maxY</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_minScaleLevel" data-tablink="minScaleLevel">minScaleLevel</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_minX" data-tablink="minX">minX</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_minY" data-tablink="minY">minY</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_options" data-tablink="options">options</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_rotateAngle" data-tablink="rotateAngle">rotateAngle</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_scaleLevel" data-tablink="scaleLevel">scaleLevel</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_searchAnalyser" data-tablink="searchAnalyser">searchAnalyser</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_showCompass" data-tablink="showCompass">showCompass</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_themeName" data-tablink="themeName">themeName</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_tiltAngle" data-tablink="tiltAngle">tiltAngle</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_viewMode" data-tablink="viewMode">viewMode</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_visibleGroupIDs" data-tablink="visibleGroupIDs">visibleGroupIDs</a>
+
+                        
+                        
+                    </li>
+                
+            </ul>
+            
+        </div>
+    
+        <div class="index-section events col-sm-4">
+            <h3>事件</h3>
+            
+            <ul class="index-list events">
+                
+                    <li class="index-item event">
+                        <a href="#" data-tabid="#event" data-anchor="#event_focusGroupIDChanged" data-tablink="focusGroupIDChanged">focusGroupIDChanged</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item event">
+                        <a href="#" data-tabid="#event" data-anchor="#event_loadComplete" data-tablink="loadComplete">loadComplete</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item event">
+                        <a href="#" data-tabid="#event" data-anchor="#event_mapClickNode" data-tablink="mapClickNode">mapClickNode</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item event">
+                        <a href="#" data-tabid="#event" data-anchor="#event_mapScaleLevelChanged" data-tablink="mapScaleLevelChanged">mapScaleLevelChanged</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item event">
+                        <a href="#" data-tabid="#event" data-anchor="#event_scaleLevelChanged" data-tablink="scaleLevelChanged">scaleLevelChanged</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item event">
+                        <a href="#" data-tabid="#event" data-anchor="#event_visibleGroupIDsChanged" data-tablink="visibleGroupIDsChanged">visibleGroupIDsChanged</a>
+
+                        
+                        
+                    </li>
+                
+            </ul>
+             
+        </div>
+    </div>
+</div>
+
+<div>
+    <ul id="itemTab" class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#class">详情</a></li>
+        
+            <li><a data-toggle="tab" href="#method">方法</a></li>
+        
+        
+            <li><a data-toggle="tab" href="#property">属性</a></li>
+        
+        
+            <li><a data-toggle="tab" href="#event">事件</a></li>
+        
+    </ul>
+
+    <div class="tab-content">
+        <div id="class" class="tab-pane active">
+            <div class="well well-small classDetail sign-left1">
+            
+
+            
+
+             
+                <!-- <div class="foundat">
+                  Defined in: <a href="../files/.._jssdk_src_newapi-fengmap_FMMap.js.html#l6"><code>..\jssdk\src\newapi-fengmap\FMMap.js:6</code></a> 
+                </div>-->
+             
+
+            
+                
+                    模块: <a href="../modules/FMMap.html">FMMap</a>
+                
+            
+
+            
+        </div>
+
+        
+            
+                <div class="constructor">
+                    <h2>实例化</h2>
+                    <div id="method_fengmap.FMMap" class="method item">
+    <h3 class="name">fengmap.FMMap</h3>
+    <code>
+    fengmap.FMMap
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        opts
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_newapi-fengmap_FMMap.js.html#l6"><code>..\jssdk\src\newapi-fengmap\FMMap.js:6</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">opts</code>
+                       <td> <span class="type"><a href="..\classes\fengmap.MapOptions.html" class="crosslink">fengmap.MapOptions</a></span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>地图配置对象</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+
+    
+        <div class="example">
+            <h4>示例:</h4>
+            <ul class="nav nav-tabs example-list">
+                
+                <li role="presentation"  class="active"  _no='0'> <a>加载fengmap服务器上模型</a></li>
+                
+                <li role="presentation"   _no='1'> <a>加载本地文件夹中模型</a></li>
+                
+            </ul>
+
+            <div class="example-content ">
+                <div class="stdoc-code"><pre class="code prettyprint"><code>//初始化地图对象
+//默认使用在线数据，从蜂鸟视图数据服务器加载模型数据
+var map = new fengmap.FMMap({
+    container : document.body
+});
+map.openMapById(1);//打开场景id=1的模型</code></pre>
+</div><div class="stdoc-code"><pre class="code prettyprint"><code>//根据数据实际位置加载地图
+var map = new fengmap.FMMap({
+    container : document.body,
+    mapServerURL:&#39;data/10347&#39;,
+    mapThemeURL : &#39;data/theme&#39;
+});
+
+map.openMapById(1);//打开场景id=1的模型</code></pre>
+</div>
+            </div>
+
+            <!-- <button class="btn btn-info btn-viewDemo" type="button">view demo</button>
+            <button class="btn btn-info btn-editDemo" type="button">edit code</button> -->
+        </div>
+    
+</div>
+
+                </div>
+            
+        </div>
+
+        
+            <div id="method" class="tab-pane">
+               <!-- <h2 class="off-left">Methods</h2> -->
+
+                
+                    <div id="method_addLocationMarker" class="method item">
+    <h3 class="name">addLocationMarker</h3>
+    <code>
+    addLocationMarker
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        lm
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_fengmap_Map.js.html#l2655"><code>..\jssdk\src\fengmap\Map.js:2655</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>添加定位标注物</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">lm</code>
+                       <td> <span class="type"><a href="..\classes\fengmap.FMLocationMarker.html" class="crosslink">fengmap.FMLocationMarker</a></span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>FMLocationMarker对象</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_callAllLayersByAlias" class="method item">
+    <h3 class="name">callAllLayersByAlias</h3>
+    <code>
+    callAllLayersByAlias
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        layerAlias
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        callback
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_newapi-fengmap_FMMap.js.html#l81"><code>..\jssdk\src\newapi-fengmap\FMMap.js:81</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+            <p>自版本 v2.0.0 起，开始使用</p>
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>根据类型别名获取所有楼层上面的该类型图层。</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">layerAlias</code>
+                       <td> <span class="type">String | Array</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>别名，extent, model, label, facility,textMarker,imageMarker</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">callback</code>
+                       <td> <span class="type">Function</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>依次返回所有楼层的图层回调</p>
+
+                    </div>
+
+                    
+                        <table class="table table-bordered">
+                         <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+                           
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">layer</code>
+                                   <td> <span class="type">Object</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>查询到的某一楼层的图层</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                        </table>
+                        </td>
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+
+    
+        <div class="example">
+            <h4>示例:</h4>
+            <ul class="nav nav-tabs example-list">
+                
+                <li role="presentation"  class="active"  _no='0'> <a>图层控制</a></li>
+                
+            </ul>
+
+            <div class="example-content ">
+                <div class="stdoc-code"><pre class="code prettyprint"><code>//隐藏1楼的公共设施层
+map.getLayerByAlias(1,&#39;facility&#39;,function(layer){
+    layer.visible = false;
+});
+
+//隐藏所有楼层的公共设施层
+map.callAllLayersByAlias(&#39;facility&#39;,function(layer){
+    layer.visible = false;
+});</code></pre>
+</div>
+            </div>
+
+            <!-- <button class="btn btn-info btn-viewDemo" type="button">view demo</button>
+            <button class="btn btn-info btn-editDemo" type="button">edit code</button> -->
+        </div>
+    
+</div>
+
+                
+                    <div id="method_clearLineMark" class="method item">
+    <h3 class="name">clearLineMark</h3>
+    <code>
+    clearLineMark
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        lm
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_fengmap_Map.js.html#l568"><code>..\jssdk\src\fengmap\Map.js:568</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>清除线图层</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">lm</code>
+                       <td> <span class="type">fengmap.Line</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>fengmap.Line的一个或多个对象, 如为空, 则会删除地图中所有的线型</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_coordMapToScreen" class="method item">
+    <h3 class="name">coordMapToScreen</h3>
+    <code>
+    coordMapToScreen
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        x
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        y
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        z
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="..\classes\fengmap.FMMapCoord.html" class="crosslink">fengmap.FMMapCoord</a></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_fengmap_Map.js.html#l2752"><code>..\jssdk\src\fengmap\Map.js:2752</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>地图坐标转屏幕坐标</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">x</code>
+                       <td> <span class="type">Float</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>地图坐标点x值</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">y</code>
+                       <td> <span class="type">Float</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>地图坐标点y值</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">z</code>
+                       <td> <span class="type">Float</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>地图坐标点z值</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        [<span class="type"><a href="..\classes\fengmap.FMMapCoord.html" class="crosslink">fengmap.FMMapCoord</a></span>]
+                    
+                    <p>返回fengmap.FMMapCoord 地图坐标对象</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_coordScreenToMap" class="method item">
+    <h3 class="name">coordScreenToMap</h3>
+    <code>
+    coordScreenToMap
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        x
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        y
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        z
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="..\classes\fengmap.FMScreenCoord.html" class="crosslink">fengmap.FMScreenCoord</a></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_fengmap_Map.js.html#l2703"><code>..\jssdk\src\fengmap\Map.js:2703</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>屏幕坐标转地图坐标</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">x</code>
+                       <td> <span class="type">Float</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>屏幕坐标点x值.</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">y</code>
+                       <td> <span class="type">Float</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>屏幕坐标点y值.</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">z</code>
+                       <td> <span class="type">Float</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>为当前楼层高度值和模型高度值之和.</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        [<span class="type"><a href="..\classes\fengmap.FMScreenCoord.html" class="crosslink">fengmap.FMScreenCoord</a></span>]
+                    
+                    <p>返回fengmap.FMScreenCoord 地图坐标对象</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+        <div class="example">
+            <h4>示例:</h4>
+            <ul class="nav nav-tabs example-list">
+                
+                <li role="presentation"  class="active"  _no='0'> <a>坐标转换</a></li>
+                
+            </ul>
+
+            <div class="example-content ">
+                <div class="stdoc-code"><pre class="code prettyprint"><code>//屏幕坐标转地图坐标
+
+//为地图容器添加鼠标滑过事件,获取屏幕坐标后转地图坐标
+container.onmousemove = function(event) {
+    //获取地图视图的边框
+    var box = (event.target || event.srcElement).getBoundingClientRect();
+
+    var currentGid = map.focusGroupID;
+    //屏幕坐标
+    var screenPnt = {
+        x: event.clientX - box.left, //把当前的clientX减去当前容器相对左边的距离得到实际的x坐标
+        y: event.clientY - box.top,//把当前的clientY减去当前容器相对顶边的距离得到实际的x坐标
+        z: map.getGroupHeight(currentGid) + map.layerLocalHeight  //当前楼层高度 + 图层相对高度(固定值)
+    };
+       var pnt = map.coordScreenToMap(screenPnt.x, screenPnt.y, screenPnt.z); //转地图坐标
+       console.log(pnt);
+}</code></pre>
+</div>
+            </div>
+
+            <!-- <button class="btn btn-info btn-viewDemo" type="button">view demo</button>
+            <button class="btn btn-info btn-editDemo" type="button">edit code</button> -->
+        </div>
+    
+</div>
+
+                
+                    <div id="method_drawLineMark" class="method item">
+    <h3 class="name">drawLineMark</h3>
+    <code>
+    drawLineMark
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        lm
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        style
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+        <span class="returns-inline">
+            <span class="type">fengmap.Line</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_fengmap_Map.js.html#l312"><code>..\jssdk\src\fengmap\Map.js:312</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>绘制线</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">lm</code>
+                       <td> <span class="type"><a href="..\classes\fengmap.FMLineMarker.html" class="crosslink">fengmap.FMLineMarker</a></span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>FMLineMarker对象, 还可以传入一个坐标(FMMapCoord)的数组,方便快速的创建自定义线型</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">style</code>
+                       <td> <span class="type">JSON</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>线形的样式(可选参数), 但在创建自定义线型时, 推荐传入此参数</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        [<span class="type">fengmap.Line</span>]
+                    
+                    <p>线形对象</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_flash" class="method item">
+    <h3 class="name">flash</h3>
+    <code>
+    flash
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        params
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+        <span class="returns-inline">
+            <span class="type">Null</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                    <p>Provided by the <a href="../modules/Navigation.html">Navigation</a> module.</p>
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_fengmap_scene_MapLabel.js.html#l74"><code>..\jssdk\src\fengmap\scene\MapLabel.js:74</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>闪烁效果(放大缩小)</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">params</code>
+                       <td> <span class="type">Json</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>[{scale: time: callback:}]</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        [<span class="type">Null</span>]
+                    
+                    <p>[null]</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_fullScreenAvaliable" class="method item">
+    <h3 class="name">fullScreenAvaliable</h3>
+    <code>
+    fullScreenAvaliable
+    
+        <span class="paren">()</span>
+    
+    </code>
+
+    
+        <span class="returns-inline">
+            <span class="type">Bool</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_newapi-fengmap_FMMap.js.html#l473"><code>..\jssdk\src\newapi-fengmap\FMMap.js:473</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>获取浏览器支持全屏显示状态</p>
+</div>
+    </div>
+
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        [<span class="type">Bool</span>]
+                    
+                    <p>true支持，false不支持。返回true时才能使用fullScreen属性设置全屏</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_getDatasByAlias" class="method item">
+    <h3 class="name">getDatasByAlias</h3>
+    <code>
+    getDatasByAlias
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        groupID
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        alias
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        filter
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+        <span class="returns-inline">
+            <span class="type">Array</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_newapi-fengmap_FMMap.js.html#l93"><code>..\jssdk\src\newapi-fengmap\FMMap.js:93</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>根据类型别名获取地图元素数据</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">groupID</code>
+                       <td> <span class="type">Int</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>楼层的groupID</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">alias</code>
+                       <td> <span class="type">String | Array</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>别名, 可以为一个string值或一个string数组, 别名: extent, model, label, facility,textMarker,imageMarker</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">filter</code>
+                       <td> <span class="type">Function</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>过滤方法</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        [<span class="type">Array</span>]
+                    
+                    <p>得到的地图元素数据</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_getFMGroup" class="method item">
+    <h3 class="name">getFMGroup</h3>
+    <code>
+    getFMGroup
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        groupID
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="..\classes\fengmap.FMGroup.html" class="crosslink">fengmap.FMGroup</a></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_newapi-fengmap_FMMap.js.html#l428"><code>..\jssdk\src\newapi-fengmap\FMMap.js:428</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>根据楼层ID，获取某一层模型数据。</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">groupID</code>
+                       <td> <span class="type">Number</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>模型id</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        [<span class="type"><a href="..\classes\fengmap.FMGroup.html" class="crosslink">fengmap.FMGroup</a></span>]
+                    
+                    <p>返回group对象</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_getGestureEnableController" class="method item">
+    <h3 class="name">getGestureEnableController</h3>
+    <code>
+    getGestureEnableController
+    
+        <span class="paren">()</span>
+    
+    </code>
+
+    
+        <span class="returns-inline">
+            <span class="type">fengmap.GestureEnableController</span>
+        </span>
+    
+
+    
+
+    
+
+    
+        <span class="flag final">只读</span>
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_newapi-fengmap_FMMap.js.html#l461"><code>..\jssdk\src\newapi-fengmap\FMMap.js:461</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>获取手势绘制类</p>
+</div>
+    </div>
+
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        [<span class="type">fengmap.GestureEnableController</span>]
+                    
+                    <p>返回GestureEnableController对象</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_getLayerByAlias" class="method item">
+    <h3 class="name">getLayerByAlias</h3>
+    <code>
+    getLayerByAlias
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        groupID
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        layerAlias
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        callback
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+        <span class="returns-inline">
+            <span class="type">Array</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_newapi-fengmap_FMMap.js.html#l69"><code>..\jssdk\src\newapi-fengmap\FMMap.js:69</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+            <p>自版本 v2.0.0 起，开始使用</p>
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>根据类型别名获取指定楼层上面的某图层</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">groupID</code>
+                       <td> <span class="type">Int</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>楼层的groupID</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">layerAlias</code>
+                       <td> <span class="type">String</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>别名，extent, model, label, facility,textMarker,imageMarker</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">callback</code>
+                       <td> <span class="type">Function</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>查找到后的回调函数</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        [<span class="type">Array</span>]
+                    
+                    <p>包含该类型的图层数组</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+        <div class="example">
+            <h4>示例:</h4>
+            <ul class="nav nav-tabs example-list">
+                
+                <li role="presentation"  class="active"  _no='0'> <a>图层控制</a></li>
+                
+            </ul>
+
+            <div class="example-content ">
+                <div class="stdoc-code"><pre class="code prettyprint"><code>//隐藏1楼的公共设施层
+map.getLayerByAlias(1,&#39;facility&#39;,function(layer){
+    layer.visible = false;
+});
+
+//隐藏所有楼层的公共设施层
+map.callAllLayersByAlias(&#39;facility&#39;,function(layer){
+    layer.visible = false;
+});</code></pre>
+</div>
+            </div>
+
+            <!-- <button class="btn btn-info btn-viewDemo" type="button">view demo</button>
+            <button class="btn btn-info btn-editDemo" type="button">edit code</button> -->
+        </div>
+    
+</div>
+
+                
+                    <div id="method_getScalelevelValueByVectics" class="method item">
+    <h3 class="name">getScalelevelValueByVectics</h3>
+    <code>
+    getScalelevelValueByVectics
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        startPnt
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        endPnt
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+        <span class="returns-inline">
+            <span class="type">Int</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_newapi-fengmap_FMMap.js.html#l46"><code>..\jssdk\src\newapi-fengmap\FMMap.js:46</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+            <p>自版本 v2.0.0 起，开始使用</p>
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>根据矩形左下角坐标和右上角坐标获取地图当前的显示级别</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">startPnt</code>
+                       <td> <span class="type">fengmap.mapCoord</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>左下角坐标</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">endPnt</code>
+                       <td> <span class="type">fengmap.mapCoord</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>右上角坐标</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        [<span class="type">Int</span>]
+                    
+                    <p>当前级别</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_moveTo" class="method item">
+    <h3 class="name">moveTo</h3>
+    <code>
+    moveTo
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        opts
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_newapi-fengmap_FMMap.js.html#l326"><code>..\jssdk\src\newapi-fengmap\FMMap.js:326</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>视野中心移动到指定位置,如果不是当前聚焦层，将先设置目标层为聚焦层在跳转</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">opts</code>
+                       <td> <span class="type">JSON</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                         
+                    </div>
+
+                    
+                        <table class="table table-bordered">
+                         <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+                           
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">x</code>
+                                   <td> <span class="type">Float</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>地图坐标x值。</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">y</code>
+                                   <td> <span class="type">Float</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>地图坐标y值。</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">z</code>
+                                   <td> <span class="type">Float</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>地图坐标z值。</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">groupID</code>
+                                   <td> <span class="type">Int</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>楼层id,跳转到指定位置，并聚焦该楼层。</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">time</code>
+                                   <td> <span class="type">Int</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>目标层不是聚焦层时跳转的动画时间间隔。</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">callback</code>
+                                   <td> <span class="type">Function</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>完成moveTo事件后的回调，返回目标层gid。</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                        </table>
+                        </td>
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_moveToCenter" class="method item">
+    <h3 class="name">moveToCenter</h3>
+    <code>
+    moveToCenter
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        data
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+        <span class="returns-inline">
+            <span class="type">Null</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_newapi-fengmap_FMMap.js.html#l411"><code>..\jssdk\src\newapi-fengmap\FMMap.js:411</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>将视频移动当前聚焦层的中心点</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">data</code>
+                       <td> <span class="type">JSON</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>{x:, y:, groupID:, duration:(opt), callback:(opt)}</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        [<span class="type">Null</span>]
+                    
+                    <p>null</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_openMapById" class="method item">
+    <h3 class="name">openMapById</h3>
+    <code>
+    openMapById
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        sid
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        failed
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_newapi-fengmap_FMMap.js.html#l204"><code>..\jssdk\src\newapi-fengmap\FMMap.js:204</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>根据地图ID打开地图。</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">sid</code>
+                       <td> <span class="type">String | Number</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>场景id</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">failed</code>
+                       <td> <span class="type">Function</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>遇到错误时的回调函数 (可选)</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_pickFilterFunction" class="method item">
+    <h3 class="name">pickFilterFunction</h3>
+    <code>
+    pickFilterFunction
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        fm
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+        <span class="returns-inline">
+            <span class="type">Bool</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_fengmap_Map.js.html#l1533"><code>..\jssdk\src\fengmap\Map.js:1533</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>拾取物体的过滤方法，可以自定义进行覆盖。可以根据返回的fm属性自定义设置某地图元素可否选中。</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">fm</code>
+                       <td> <span class="type">JSON</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>拾取的物体的 fm 数据</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        [<span class="type">Bool</span>]
+                    
+                    <p>bool值，是否支持点击高亮。true支持点击高亮，false不支持高亮</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+        <div class="example">
+            <h4>示例:</h4>
+            <ul class="nav nav-tabs example-list">
+                
+                <li role="presentation"  class="active"  _no='0'> <a>设置点击是否高亮</a></li>
+                
+            </ul>
+
+            <div class="example-content ">
+                <div class="stdoc-code"><pre class="code prettyprint"><code>//过滤不允许点击的地图元素，设置为true为允许点击，设置为false为不允许点击
+map.pickFilterFunction = function(event) {
+    //如设置点击墙模型时不高亮
+    if(event.nodeType == fengmap.FMNodeType.MODEL &amp;&amp;
+        event.typeID == "300000") {
+            return false;
+    }
+    return true;
+};</code></pre>
+</div>
+            </div>
+
+            <!-- <button class="btn btn-info btn-viewDemo" type="button">view demo</button>
+            <button class="btn btn-info btn-editDemo" type="button">edit code</button> -->
+        </div>
+    
+</div>
+
+                
+                    <div id="method_removeLocationMarker" class="method item">
+    <h3 class="name">removeLocationMarker</h3>
+    <code>
+    removeLocationMarker
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        lm
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_fengmap_Map.js.html#l2668"><code>..\jssdk\src\fengmap\Map.js:2668</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>移除定位标注物</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">lm</code>
+                       <td> <span class="type"><a href="..\classes\fengmap.FMLocationMarker.html" class="crosslink">fengmap.FMLocationMarker</a></span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>FMLocationMarker对象</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_rotateTo" class="method item">
+    <h3 class="name">rotateTo</h3>
+    <code>
+    rotateTo
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        params
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_fengmap_Map.js.html#l2869"><code>..\jssdk\src\fengmap\Map.js:2869</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>将地图水平旋转至</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">params</code>
+                       <td> <span class="type">Json</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>{to: 45, duration: 1, callback: function() {}}</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_scaleLevelIn" class="method item">
+    <h3 class="name">scaleLevelIn</h3>
+    <code>
+    scaleLevelIn
+    
+        <span class="paren">()</span>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_fengmap_Map.js.html#l905"><code>..\jssdk\src\fengmap\Map.js:905</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>模型放大。按级别放大，每次放大1级,改变map.scaleLevel的值</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_scaleLevelOut" class="method item">
+    <h3 class="name">scaleLevelOut</h3>
+    <code>
+    scaleLevelOut
+    
+        <span class="paren">()</span>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_fengmap_Map.js.html#l915"><code>..\jssdk\src\fengmap\Map.js:915</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>模型缩小。按级别缩小，每次缩小1级,改变map.scaleLevel的值</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_search" class="method item">
+    <h3 class="name">search</h3>
+    <code>
+    search
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        map
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        gids
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        callback
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        query
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+        <span class="returns-inline">
+            <span class="type">Array</span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_newapi-fengmap_FMMap.js.html#l103"><code>..\jssdk\src\newapi-fengmap\FMMap.js:103</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+            <p>自版本 v1.2.0 起，开始使用</p>
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>数据检索方法</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">map</code>
+                       <td> <span class="type"><a href="..\classes\fengmap.FMMap.html" class="crosslink">fengmap.FMMap</a></span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>当前地图对象。</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">gids</code>
+                       <td> <span class="type">Int | Array</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>待查询的楼层ID数组或某一楼层的楼层ID</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">callback</code>
+                       <td> <span class="type">Function</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>完成查询后的回调，返回查询结果</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">query</code>
+                       <td> <span class="type">JSON</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                         
+                    </div>
+
+                    
+                        <table class="table table-bordered">
+                         <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+                           
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">nodeType</code>
+                                   <td> <span class="type"><a href="..\classes\fengmap.FMNodeType.html" class="crosslink">fengmap.FMNodeType</a></span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>某一种查询类型。</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">name</code>
+                                   <td> <span class="type">String</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>地图元素名称，英文字母区分大小写。</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">keyword</code>
+                                   <td> <span class="type">String</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>地图元素关键字，英文字母区分大小写。</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">FID</code>
+                                   <td> <span class="type">String</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>地图元素模型的FID属性</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">ID</code>
+                                   <td> <span class="type">String</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>地图元素ID，针对所有地图元素</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">typeID</code>
+                                   <td> <span class="type">String</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>地图元素的typeID属性，针对&#39;model&#39;和&#39;facility&#39;类型</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                            <tr class="param">
+                            
+                                   <td> <code class="param-name">types</code>
+                                   <td> <span class="type">Array</span>
+                                   <td>
+                                
+
+                                
+                                </td>
+                                <td><div class="param-description">
+                                    <p>查询类型，包括[&#39;model&#39;, &#39;label&#39;, &#39;facility&#39;, &#39;imageMarker&#39;, &#39;textMarker&#39;, &#39;locationMarker&#39;]，默认是所有。</p>
+
+                                </div>
+                                
+                            </tr>
+                            
+                        </table>
+                        </td>
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        [<span class="type">Array</span>]
+                    
+                    <p>检索到的数据</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+        <div class="example">
+            <h4>示例:</h4>
+            <ul class="nav nav-tabs example-list">
+                
+                <li role="presentation"  class="active"  _no='0'> <a>查询第一层的所有地图元素</a></li>
+                
+            </ul>
+
+            <div class="example-content ">
+                <div class="stdoc-code"><pre class="code prettyprint"><code>//请求参数，查询类型为所有元素
+var request = {
+    types: [&#39;model&#39;, &#39;facility&#39;, &#39;label&#39;, &#39;textMarker&#39;, &#39;imageMarker&#39;, &#39;locationMarker&#39;] //所有可省略，默认为所有地图元素
+};
+
+//搜索分析：楼层groupID=1下的所有类型的地图元素
+fengmap.MapUtil.search(map, 1, request, function(result) {
+    var models = result;    
+});
+
+//查询所有楼层的所有类型的地图元素
+fengmap.MapUtil.search(map, &#39;all&#39;, request, function(result) {
+});                              
+
+ //查询楼层1和楼层2上的所有地图元素
+fengmap.MapUtil.search(map, [1,2], request, function(result) {
+});</code></pre>
+</div>
+            </div>
+
+            <!-- <button class="btn btn-info btn-viewDemo" type="button">view demo</button>
+            <button class="btn btn-info btn-editDemo" type="button">edit code</button> -->
+        </div>
+    
+</div>
+
+                
+                    <div id="method_selectNull" class="method item">
+    <h3 class="name">selectNull</h3>
+    <code>
+    selectNull
+    
+        <span class="paren">()</span>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_fengmap_Map.js.html#l1513"><code>..\jssdk\src\fengmap\Map.js:1513</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>清空选中模型方法，把所有高亮的模型都取消高亮</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_setBackgroundColor" class="method item">
+    <h3 class="name">setBackgroundColor</h3>
+    <code>
+    setBackgroundColor
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        color
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        alpha
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_fengmap_Map.js.html#l1336"><code>..\jssdk\src\fengmap\Map.js:1336</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+            <p>自版本 v1.2.0 起，开始使用</p>
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>设置背景颜色及透明度</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">color</code>
+                       <td> <span class="type">Int</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>十六进制颜色值或CSS颜色样式: 0xFF0000 | &#39;#FF0000&#39;</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">alpha</code>
+                       <td> <span class="type">Float</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>透明度。在0 ~ 1之间取值。</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_setMapScaleLevelRange" class="method item">
+    <h3 class="name">setMapScaleLevelRange</h3>
+    <code>
+    setMapScaleLevelRange
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        min
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        max
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_fengmap_Map.js.html#l720"><code>..\jssdk\src\fengmap\Map.js:720</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>设置地图比例尺 级别 范围</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">min</code>
+                       <td> <span class="type">Float</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>最小比例尺级别 如: 16, 则地图最小比例尺级别为16,对应的比例尺为 1:9028 (厘米)</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">max</code>
+                       <td> <span class="type">Float</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>最大比例尺级别 如: 23, 则地图最大比例尺级别为24,对应的比例尺为 1:70 (厘米)</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_setMapScaleRange" class="method item">
+    <h3 class="name">setMapScaleRange</h3>
+    <code>
+    setMapScaleRange
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        min
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        max
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_fengmap_Map.js.html#l692"><code>..\jssdk\src\fengmap\Map.js:692</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>设置地图比例尺范围</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">min</code>
+                       <td> <span class="type">Float</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>最小比例尺 如: 500, 则地图最小比例尺为 1:500</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">max</code>
+                       <td> <span class="type">Float</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>最大比例尺 如: 20000, 则地图最大比例尺为 1:20000</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_setModelSelectColor" class="method item">
+    <h3 class="name">setModelSelectColor</h3>
+    <code>
+    setModelSelectColor
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        color
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        alpha
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_fengmap_Map.js.html#l1347"><code>..\jssdk\src\fengmap\Map.js:1347</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+            <p>自版本 v1.2.0 起，开始使用</p>
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>设置模型的拾取颜色</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">color</code>
+                       <td> <span class="type">Color</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>十六进制颜色值或CSS颜色样式: 0xFF0000 | &#39;#FF0000&#39;</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">alpha</code>
+                       <td> <span class="type">Float</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>透明度。在0 ~ 1之间取值。</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_setScaleLevelLimit" class="method item">
+    <h3 class="name">setScaleLevelLimit</h3>
+    <code>
+    setScaleLevelLimit
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        minLevel
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        maxLevel
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_fengmap_Map.js.html#l872"><code>..\jssdk\src\fengmap\Map.js:872</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>限制最大最小级别</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">minLevel</code>
+                       <td> <span class="type">Int</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>0~6之间取值</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">maxLevel</code>
+                       <td> <span class="type">Int</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>0~6之间取值</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_storeSelect" class="method item">
+    <h3 class="name">storeSelect</h3>
+    <code>
+    storeSelect
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        model
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        isSelected
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        multiSelect
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_fengmap_Map.js.html#l1453"><code>..\jssdk\src\fengmap\Map.js:1453</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>选中模型方法</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">model</code>
+                       <td> <span class="type">fengmap.FMModel</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>模型对象</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">isSelected</code>
+                       <td> <span class="type">Boolean</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>是否选中</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">multiSelect</code>
+                       <td> <span class="type">Boolean</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>是否保持上一次选中模型的状态。false是不保存，即地图中只有当前设置的模型高亮，其他模型不高亮。ture则不清空上次的选中状态，都高亮。</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_tiltTo" class="method item">
+    <h3 class="name">tiltTo</h3>
+    <code>
+    tiltTo
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        params
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_fengmap_Map.js.html#l2839"><code>..\jssdk\src\fengmap\Map.js:2839</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>将地图的倾斜角度缓动至</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">params</code>
+                       <td> <span class="type">Json</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>{to: 45, duration: 1, callback: function() {}}</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_zoomIn" class="method item">
+    <h3 class="name">zoomIn</h3>
+    <code>
+    zoomIn
+    
+        <span class="paren">()</span>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_fengmap_Map.js.html#l976"><code>..\jssdk\src\fengmap\Map.js:976</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>模型放大。不是成比例缩放的,无极缩放，和当前的saclelevel无关</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_zoomOut" class="method item">
+    <h3 class="name">zoomOut</h3>
+    <code>
+    zoomOut
+    
+        <span class="paren">()</span>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_fengmap_Map.js.html#l984"><code>..\jssdk\src\fengmap\Map.js:984</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>模型缩小。不是成比例缩放的,无极缩放,和当前的saclelevel无关</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+            </div>
+        
+
+        
+            <div id="property" class="tab-pane">
+              <!--  <h2 class="off-left">Properties</h2> -->
+
+                
+                    <div id="property_backgroundColor" class="property item">
+    <h3 class="name"><code>backgroundColor</code></h3>
+    <span class="type">Int</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l1363"><code>..\jssdk\src\fengmap\Map.js:1363</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>模型视窗的背景色</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_center" class="property item">
+    <h3 class="name"><code>center</code></h3>
+    <span class="type">Unknown</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l274"><code>..\jssdk\src\fengmap\Map.js:274</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>获取地图的小心位置(墨卡拖坐标系)</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_focusGroupID" class="property item">
+    <h3 class="name"><code>focusGroupID</code></h3>
+    <span class="type">Number | Object</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l1243"><code>..\jssdk\src\fengmap\Map.js:1243</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>设置groupId相关楼层为当前楼层,支持只传楼层id,或Json对象</p>
+</div>
+    </div>
+
+    
+        <p><strong>默认值:</strong></p>
+         <code> 第一层</code>
+    
+
+    
+        <div class="example">
+            <h4>示例:</h4>
+            <ul class="nav nav-tabs example-list">
+                
+                <li role="presentation"  class="active"  _no='0'> <a>设置聚焦楼层</a></li>
+                
+            </ul>
+             <div class="example-content ">
+                <div class="stdoc-code"><pre class="code prettyprint"><code>//方式1：设置聚焦层
+map.focusGroupID = 1;
+
+//方式2：设置gid=1的楼层为当前聚焦层，且单次切换楼层的动画时间为0。
+map.focusGroupID = {gid: 1, time: 0}</code></pre>
+</div>
+            </div>
+        </div>
+     
+
+    
+</div>
+
+                
+                    <div id="property_fullScreen" class="property item">
+    <h3 class="name"><code>fullScreen</code></h3>
+    <span class="type">Boolean</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_newapi-fengmap_FMMap.js.html#l484"><code>..\jssdk\src\newapi-fengmap\FMMap.js:484</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>设置模型窗口全屏状态</p>
+</div>
+    </div>
+
+    
+        <p><strong>默认值:</strong></p>
+         <code> false</code>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_groupIDs" class="property item">
+    <h3 class="name"><code>groupIDs</code></h3>
+    <span class="type">Array</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l2791"><code>..\jssdk\src\fengmap\Map.js:2791</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>获取当前模型的所有楼层ID集合</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_groupSpace" class="property item">
+    <h3 class="name"><code>groupSpace</code></h3>
+    <span class="type">Number</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l2164"><code>..\jssdk\src\fengmap\Map.js:2164</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>获取/设置 当前地图的楼层间距.</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_layerLocalHeight" class="property item">
+    <h3 class="name"><code>layerLocalHeight</code></h3>
+    <span class="type">Int</span>
+
+    
+
+    
+
+    
+        <span class="flag final">只读</span>
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_newapi-fengmap_FMMap.js.html#l519"><code>..\jssdk\src\newapi-fengmap\FMMap.js:519</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>地图针对楼层高度的偏移量，坐标转换的时候z值需要楼层高度+此偏移</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_lineStyle" class="property item">
+    <h3 class="name"><code>lineStyle</code></h3>
+    <span class="type">JSON style 线样式</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l196"><code>..\jssdk\src\fengmap\Map.js:196</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>设置线样式，包含颜色、线宽、线型的实体和间隔长度。</p>
+</div>
+    </div>
+
+    
+        <p><strong>默认值:</strong></p>
+         <code> {color: 0xff0000,lineWidth: 8,alpha: 0.8,dash: {size: 1,gap: 1}}</code>
+    
+
+    
+
+    
+        <h4>属性值详情:</h4>
+
+        <ul class="params-list">
+            
+            <li class="param">
+                
+                    <code class="param-name">style.lineType</code>
+                    <span class="type"><a href="..\classes\fengmap.FMLineType.html" class="crosslink">fengmap.FMLineType</a></span>
+                
+
+                <div class="param-description">
+                    <p>线型</p>
+
+                </div>
+
+                
+            </li>
+            
+            <li class="param">
+                
+                    <code class="param-name">style.smooth</code>
+                    <span class="type">Boolean</span>
+                
+
+                <div class="param-description">
+                    <p>是否开启平滑线功能</p>
+
+                </div>
+
+                
+            </li>
+            
+            <li class="param">
+                
+                    <code class="param-name">style.lineWidth</code>
+                    <span class="type">Number</span>
+                
+
+                <div class="param-description">
+                    <p>设置线宽</p>
+
+                </div>
+
+                
+            </li>
+            
+            <li class="param">
+                
+                    <code class="param-name">style.godColor</code>
+                    <span class="type">String</span>
+                
+
+                <div class="param-description">
+                    <p>设置线的颜色，十六进制颜色值。如：&#39;#FF0000&#39;</p>
+
+                </div>
+
+                
+            </li>
+            
+            <li class="param">
+                
+                    <code class="param-name">style.godEdgeColor</code>
+                    <span class="type">Boolean</span>
+                
+
+                <div class="param-description">
+                    <p>设置边线的颜色,十六进制颜色值。如：&#39;#FF0000&#39;</p>
+
+                </div>
+
+                
+            </li>
+            
+            <li class="param">
+                
+                    <code class="param-name">style.alpha</code>
+                    <span class="type">Boolean</span>
+                
+
+                <div class="param-description">
+                    <p>先透明度设置。0~1之间取值</p>
+
+                </div>
+
+                
+            </li>
+            
+            <li class="param">
+                
+                    <code class="param-name">style.dash</code>
+                    <span class="type">Json</span>
+                
+
+                <div class="param-description">
+                    <p>分割线效果配置</p>
+
+                </div>
+
+                
+            </li>
+            
+            <li class="param">
+                
+                    <code class="param-name">style.dash.size</code>
+                    <span class="type">Number</span>
+                
+
+                <div class="param-description">
+                    <p>分割线的长度</p>
+
+                </div>
+
+                
+            </li>
+            
+            <li class="param">
+                
+                    <code class="param-name">style.dash.gap</code>
+                    <span class="type">Number</span>
+                
+
+                <div class="param-description">
+                    <p>分割线后的每两条线的间隔</p>
+
+                </div>
+
+                
+            </li>
+            
+        </ul>
+    
+</div>
+
+                
+                    <div id="property_mapScale" class="property item">
+    <h3 class="name"><code>mapScale</code></h3>
+    <span class="type">Float</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l662"><code>..\jssdk\src\fengmap\Map.js:662</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>得到/设置地图比例尺 1: 500 = 1厘米对应场景中的500厘米
+在设置时, 可以传入Json, {scale:1800, duration:1, callback: function() {}}</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_mapScaleLevel" class="property item">
+    <h3 class="name"><code>mapScaleLevel</code></h3>
+    <span class="type">Int</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l753"><code>..\jssdk\src\fengmap\Map.js:753</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>得到/设置地图的比例尺级别 1~29 级, 一般室内地图所用到的级别范围在 16~23级
+在设置时, 可以传入Json, {level:18, duration:1, callback: function() {}}</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_maxScaleLevel" class="property item">
+    <h3 class="name"><code>maxScaleLevel</code></h3>
+    <span class="type">Int</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l831"><code>..\jssdk\src\fengmap\Map.js:831</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>设置地图的最大显示级别，取值为0-6之间的整数。</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_maxTitleAngle" class="property item">
+    <h3 class="name"><code>maxTitleAngle</code></h3>
+    <span class="type">Float</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l936"><code>..\jssdk\src\fengmap\Map.js:936</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>得到/设置地图的最大倾斜角度</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_maxX" class="property item">
+    <h3 class="name"><code>maxX</code></h3>
+    <span class="type">Float</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l254"><code>..\jssdk\src\fengmap\Map.js:254</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>获取地图范围的最大X值</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_maxY" class="property item">
+    <h3 class="name"><code>maxY</code></h3>
+    <span class="type">Float</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l287"><code>..\jssdk\src\fengmap\Map.js:287</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>获取地图范围的最大Y值</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_minScaleLevel" class="property item">
+    <h3 class="name"><code>minScaleLevel</code></h3>
+    <span class="type">Int</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l818"><code>..\jssdk\src\fengmap\Map.js:818</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>设置地图的最小显示级别，取值为0-6之间的整数。</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_minX" class="property item">
+    <h3 class="name"><code>minX</code></h3>
+    <span class="type">Float</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l244"><code>..\jssdk\src\fengmap\Map.js:244</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>获取地图范围的最小X值</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_minY" class="property item">
+    <h3 class="name"><code>minY</code></h3>
+    <span class="type">Float</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l264"><code>..\jssdk\src\fengmap\Map.js:264</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>获取地图范围的最小Y值</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_options" class="property item">
+    <h3 class="name"><code>options</code></h3>
+    <span class="type"><a href="..\classes\fengmap.MapOptions.html" class="crosslink">fengmap.MapOptions</a></span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l12"><code>..\jssdk\src\fengmap\Map.js:12</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>地图初始化配置项</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_rotateAngle" class="property item">
+    <h3 class="name"><code>rotateAngle</code></h3>
+    <span class="type">Float</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l2823"><code>..\jssdk\src\fengmap\Map.js:2823</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>旋转度，取值范围 -360 ~ 360,正为顺时针，负为逆时针</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_scaleLevel" class="property item">
+    <h3 class="name"><code>scaleLevel</code></h3>
+    <span class="type">Int</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l804"><code>..\jssdk\src\fengmap\Map.js:804</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>设置地图的显示级别，取值为0-6之间的整数，值越小表示地图越大。</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_searchAnalyser" class="property item">
+    <h3 class="name"><code>searchAnalyser</code></h3>
+    <span class="type"><a href="..\classes\fengmap.FMSearchAnalyser.html" class="crosslink">fengmap.FMSearchAnalyser</a></span>
+
+    
+
+    
+
+    
+        <span class="flag final">只读</span>
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_newapi-fengmap_FMMap.js.html#l503"><code>..\jssdk\src\newapi-fengmap\FMMap.js:503</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>获取查询类，使用此类可根据ID，GroupID ,KeyWord, name等查询模型、公共设施、自定义标注等地图元素。</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_showCompass" class="property item">
+    <h3 class="name"><code>showCompass</code></h3>
+    <span class="type">Boolean</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l1372"><code>..\jssdk\src\fengmap\Map.js:1372</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>指南针</p>
+</div>
+    </div>
+
+    
+        <p><strong>默认值:</strong></p>
+         <code> false</code>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_themeName" class="property item">
+    <h3 class="name"><code>themeName</code></h3>
+    <span class="type">String</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l1126"><code>..\jssdk\src\fengmap\Map.js:1126</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>设置主题名称,设置在openMapById方法之前，或在LoadComplete事件之后设置</p>
+</div>
+    </div>
+
+    
+        <p><strong>默认值:</strong></p>
+         <code> 2001</code>
+    
+
+    
+        <div class="example">
+            <h4>示例:</h4>
+            <ul class="nav nav-tabs example-list">
+                
+                <li role="presentation"  class="active"  _no='0'> <a>切换主题</a></li>
+                
+            </ul>
+             <div class="example-content ">
+                <div class="stdoc-code"><pre class="code prettyprint"><code>map.themeName = &#39;2001&#39;;</code></pre>
+</div>
+            </div>
+        </div>
+     
+
+    
+</div>
+
+                
+                    <div id="property_tiltAngle" class="property item">
+    <h3 class="name"><code>tiltAngle</code></h3>
+    <span class="type">Float</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l2804"><code>..\jssdk\src\fengmap\Map.js:2804</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>倾斜度，取值范围 0 - 60</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_viewMode" class="property item">
+    <h3 class="name"><code>viewMode</code></h3>
+    <span class="type">Enum</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l996"><code>..\jssdk\src\fengmap\Map.js:996</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>设置模型显示模式 二维/三维</p>
+</div>
+    </div>
+
+    
+        <p><strong>默认值:</strong></p>
+         <code> fengmap.FMViewMode.MODE_3D</code>
+    
+
+    
+        <div class="example">
+            <h4>示例:</h4>
+            <ul class="nav nav-tabs example-list">
+                
+                <li role="presentation"  class="active"  _no='0'> <a>三维模式</a></li>
+                
+                <li role="presentation"   _no='1'> <a>二维模式</a></li>
+                
+            </ul>
+             <div class="example-content ">
+                <div class="stdoc-code"><pre class="code prettyprint"><code>map.viewMode = fengmap.FMViewMode.MODE_3D; //三维模式</code></pre>
+</div><div class="stdoc-code"><pre class="code prettyprint"><code>map.viewMode = fengmap.FMViewMode.MODE_2D; //二维模式</code></pre>
+</div>
+            </div>
+        </div>
+     
+
+    
+</div>
+
+                
+                    <div id="property_visibleGroupIDs" class="property item">
+    <h3 class="name"><code>visibleGroupIDs</code></h3>
+    <span class="type">Array</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l1300"><code>..\jssdk\src\fengmap\Map.js:1300</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>设置可见的楼层集合</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+            </div>
+        
+
+        
+            <div id="event" class="tab-pane">
+               <!-- <h2 class="off-left">Events</h2> -->
+
+                
+                    <div id="event_focusGroupIDChanged" class="events item">
+    <h3 class="name"><code>focusGroupIDChanged</code></h3>
+    <span class="type"></span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+        <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l24"><code>..\jssdk\src\fengmap\Map.js:24</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+     <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>聚焦楼层改进事件</p>
+</div>
+    </div>
+
+    
+
+    
+</div>
+
+                
+                    <div id="event_loadComplete" class="events item">
+    <h3 class="name"><code>loadComplete</code></h3>
+    <span class="type"></span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+        <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l2190"><code>..\jssdk\src\fengmap\Map.js:2190</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+     <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>地图加载完成事件</p>
+</div>
+    </div>
+
+    
+
+    
+        <div class="example">
+            <h4>示例:</h4>
+            <ul class="nav nav-tabs example-list">
+                
+                <li role="presentation"  class="active"  _no='0'> <a>模型加载完成事件</a></li>
+                
+            </ul>
+
+            <div class="example-content ">
+                <div class="stdoc-code"><pre class="code prettyprint"><code>map.on(&#39;loadComplete&#39;, function(event) {
+    console.log(&#39;loadComplete&#39;, event);
+});</code></pre>
+</div>
+            </div>
+
+            <!-- <button class="btn btn-info btn-viewDemo" type="button">view demo</button>
+            <button class="btn btn-info btn-editDemo" type="button">edit code</button> -->
+        </div>
+    
+</div>
+
+                
+                    <div id="event_mapClickNode" class="events item">
+    <h3 class="name"><code>mapClickNode</code></h3>
+    <span class="type"></span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+        <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l1559"><code>..\jssdk\src\fengmap\Map.js:1559</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+     <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>模型点击事件</p>
+</div>
+    </div>
+
+    
+
+    
+        <div class="example">
+            <h4>示例:</h4>
+            <ul class="nav nav-tabs example-list">
+                
+                <li role="presentation"  class="active"  _no='0'> <a>模型拾取事件</a></li>
+                
+            </ul>
+
+            <div class="example-content ">
+                <div class="stdoc-code"><pre class="code prettyprint"><code>map.on(&#39;mapClickNode&#39;, function(event) {
+    console.log(&#39;mapClickNode&#39;, event);
+    //event.nodeType 拾取到的地图元素类型fengmap.FMNodeType
+    //event.target 拾取到的地图元素。包括地图元素的各个属性值，如FID，ID，坐标，GroupID，关联的label等
+    //event.eventInfo 
+    //event.eventInfo.coord 点击位置的地图坐标
+    //event.eventInfo.domEvent 对应点击位置的页面元素。即是关联mouseup事件的event参数,包括屏幕坐标、关联页面元素dom结点等
+});</code></pre>
+</div>
+            </div>
+
+            <!-- <button class="btn btn-info btn-viewDemo" type="button">view demo</button>
+            <button class="btn btn-info btn-editDemo" type="button">edit code</button> -->
+        </div>
+    
+</div>
+
+                
+                    <div id="event_mapScaleLevelChanged" class="events item">
+    <h3 class="name"><code>mapScaleLevelChanged</code></h3>
+    <span class="type"></span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+        <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l30"><code>..\jssdk\src\fengmap\Map.js:30</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+     <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>比例尺级别改变事件</p>
+</div>
+    </div>
+
+    
+
+    
+</div>
+
+                
+                    <div id="event_scaleLevelChanged" class="events item">
+    <h3 class="name"><code>scaleLevelChanged</code></h3>
+    <span class="type"></span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+        <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l2196"><code>..\jssdk\src\fengmap\Map.js:2196</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+     <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>地图级别变化事件.比如pc端鼠标滚动放大\缩小事件等.</p>
+</div>
+    </div>
+
+    
+
+    
+</div>
+
+                
+                    <div id="event_visibleGroupIDsChanged" class="events item">
+    <h3 class="name"><code>visibleGroupIDsChanged</code></h3>
+    <span class="type"></span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+        <!-- <a href="../files/.._jssdk_src_fengmap_Map.js.html#l18"><code>..\jssdk\src\fengmap\Map.js:18</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+     <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>楼层显示/隐藏事件</p>
+</div>
+    </div>
+
+    
+
+    
+</div>
+
+                
+            </div>
+        
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<a id="gotoTop" class='well well-small' href='#'>
+    Top
+</a>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/config.js"></script>
+<script src="../assets/js/doc.js"></script>
+</body>
+</html>

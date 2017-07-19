@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>fengmap.FMLocationMarkerLayer - 蜂鸟视图 JavaScript SDK v2.0.10</title>
+  
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.ico">
+</head>
+<body class="yui3-smart" _assetsPath="../assets">
+ <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <a class="navbar-brand mainlogo" href="https://www.fengmap.com/docs/js/v2.0.10_beta/index.html">
+             
+            <img alt="蜂鸟视图 JavaScript SDK v2.0.10" src="../assets/css/logo.png" title="蜂鸟视图 JavaScript SDK v2.0.10">
+            
+                蜂鸟视图 JavaScript SDK v2.0.10
+          </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                 <ul class="nav navbar-nav">
+                    
+                    <li><a href="https://www.fengmap.com">蜂鸟云平台</a>
+                    </li>
+                    
+                </ul>
+               <div class="navbar-form navbar-right filterAPi" autocomplete="off">
+                <input type="text" id='txtSearchAPI' class="form-control search-query" placeholder="搜索" />
+                 <ul id="filterList" class="filterItems dropdown-menu" role="menu"></ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="sidebar">
+    <h3>模块 / 类</h3>
+        <div id="api-tabview-filter">
+            <input id='txtSearch' type="search" class="form-control" placeholder="过滤模块或类">
+        </div>
+        <dl id="sidebar_list">
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/FMControls.html">FMControls</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/fengmap.controlOptions.html">fengmap.controlOptions</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.controlPositon.html">fengmap.controlPositon</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.controlOffset.html">fengmap.controlOffset</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.buttonGroupsControl.html">fengmap.buttonGroupsControl</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.scrollGroupsControl.html">fengmap.scrollGroupsControl</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMPopInfoWindow.html">fengmap.FMPopInfoWindow</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.toolControl.html">fengmap.toolControl</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.zoomControl.html">fengmap.zoomControl</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/FMEnum.html">FMEnum</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMDirection.html">fengmap.FMDirection</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMLineType.html">fengmap.FMLineType</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMNodeType.html">fengmap.FMNodeType</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMViewMode.html">fengmap.FMViewMode</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/FMMap.html">FMMap</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMMap.html">fengmap.FMMap</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMHeatMap.html">fengmap.FMHeatMap</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMLineMarker.html">fengmap.FMLineMarker</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMSegment.html">fengmap.FMSegment</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.MapOptions.html">fengmap.MapOptions</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMMapCoord.html">fengmap.FMMapCoord</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMScreenCoord.html">fengmap.FMScreenCoord</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMMapGestureEnableController.html">fengmap.FMMapGestureEnableController</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/FMNode.html">FMNode</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMFacility.html">fengmap.FMFacility</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMImageMarker.html">fengmap.FMImageMarker</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMLabel.html">fengmap.FMLabel</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMLocationMarker.html">fengmap.FMLocationMarker</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMStroeModel.html">fengmap.FMStroeModel</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMPolygonMarker.html">fengmap.FMPolygonMarker</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMTextMarker.html">fengmap.FMTextMarker</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMGroup.html">fengmap.FMGroup</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMFacilityLayer.html">fengmap.FMFacilityLayer</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMImageMarkerLayer.html">fengmap.FMImageMarkerLayer</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMLabelLayer.html">fengmap.FMLabelLayer</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMLocationMarkerLayer.html">fengmap.FMLocationMarkerLayer</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMTextMarkerLayer.html">fengmap.FMTextMarkerLayer</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMNode.html">fengmap.FMNode</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/FMSearchAnalyser.html">FMSearchAnalyser</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMSearchAnalyser.html">fengmap.FMSearchAnalyser</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMSearchRequest.html">fengmap.FMSearchRequest</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+                <dt>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    <a href="../modules/Navigation.html">Navigation</a>
+                </dt>
+                <dd>
+                    <ul>
+                   
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMNaviAnalyser.html">fengmap.FMNaviAnalyser</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMNaviModule.html">fengmap.FMNaviModule</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMNaviResult.html">fengmap.FMNaviResult</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMRouteCalcuResult.html">fengmap.FMRouteCalcuResult</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.FMNavigation.html">fengmap.FMNavigation</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                       <li>
+                            
+                           <a href="../classes/fengmap.NaviOptions.html">fengmap.NaviOptions</a>
+                           <ul>
+                                
+                           </ul>
+                       </li>
+                    
+                    </ul>
+                </dd>
+             
+        </dl>
+</div>
+   
+    <div class="stdoc-content">
+        <div class="apidocs">
+            <div id="docs-main">
+                <div class="content">
+                    <div class="page-header">
+    <h1>fengmap.FMLocationMarkerLayer <small>类</small></h1>
+</div>
+ <div class="well well-small sign-left3">
+      <div class="stdoc-code"><p>FMLocationMarkerLayer 定位标注层对象，并继承FMNode 属性</p>
+</div>
+ </div>
+
+<div class="well well-small sign-left2 container-fluid" id="classesItems">
+    <div class="row">
+    
+        <div class="index-section methods col-sm-4">
+            <h3>方法</h3>
+            
+            <ul class="index-list methods extends">
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_addMarker" data-tablink="addMarker">addMarker</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method inherited">
+                        <a href="#" data-tabid="#method" data-anchor="#method_flash" data-tablink="flash">flash</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_removeAll" data-tablink="removeAll">removeAll</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item method">
+                        <a href="#" data-tabid="#method" data-anchor="#method_removeMarker" data-tablink="removeMarker">removeMarker</a>
+
+                        
+                        
+                    </li>
+                
+            </ul>
+            
+        </div>
+    
+        <div class="index-section properties col-sm-4">
+            <h3>属性</h3>
+            
+            <ul class="index-list properties extends">
+                
+                    <li class="index-item property inherited">
+                        <a href="#" data-tabid="#property" data-anchor="#property_groupID" data-tablink="groupID">groupID</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property inherited">
+                        <a href="#" data-tabid="#property" data-anchor="#property_height" data-tablink="height">height</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property inherited">
+                        <a href="#" data-tabid="#property" data-anchor="#property_mapCoord" data-tablink="mapCoord">mapCoord</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property">
+                        <a href="#" data-tabid="#property" data-anchor="#property_markers" data-tablink="markers">markers</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property inherited">
+                        <a href="#" data-tabid="#property" data-anchor="#property_nodeType" data-tablink="nodeType">nodeType</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property inherited">
+                        <a href="#" data-tabid="#property" data-anchor="#property_visible" data-tablink="visible">visible</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property inherited">
+                        <a href="#" data-tabid="#property" data-anchor="#property_x" data-tablink="x">x</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property inherited">
+                        <a href="#" data-tabid="#property" data-anchor="#property_y" data-tablink="y">y</a>
+
+                        
+                        
+                    </li>
+                
+                    <li class="index-item property inherited">
+                        <a href="#" data-tabid="#property" data-anchor="#property_z" data-tablink="z">z</a>
+
+                        
+                        
+                    </li>
+                
+            </ul>
+            
+        </div>
+    
+        <div class="index-section events col-sm-4">
+            <h3>事件</h3>
+            
+        </div>
+    </div>
+</div>
+
+<div>
+    <ul id="itemTab" class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#class">详情</a></li>
+        
+            <li><a data-toggle="tab" href="#method">方法</a></li>
+        
+        
+            <li><a data-toggle="tab" href="#property">属性</a></li>
+        
+        
+    </ul>
+
+    <div class="tab-content">
+        <div id="class" class="tab-pane active">
+            <div class="well well-small classDetail sign-left1">
+            
+
+            
+                <div class="extends">
+                    继承自 <a href="..\classes\fengmap.FMNode.html" class="crosslink">fengmap.FMNode</a>
+                </div>
+            
+
+             
+                <!-- <div class="foundat">
+                  Defined in: <a href="../files/.._jssdk_src_newapi-fengmap_node_layer_FMLocationMarkerLayer.js.html#l1"><code>..\jssdk\src\newapi-fengmap\node_layer\FMLocationMarkerLayer.js:1</code></a> 
+                </div>-->
+             
+
+            
+                
+                    模块: <a href="../modules/FMNode.html">FMNode</a>
+                
+            
+
+            
+        </div>
+
+        
+            
+                <div class="constructor">
+                    <h2>实例化</h2>
+                    <div id="method_fengmap.FMLocationMarkerLayer" class="method item">
+    <h3 class="name">fengmap.FMLocationMarkerLayer</h3>
+    <code>
+    fengmap.FMLocationMarkerLayer
+    
+        <span class="paren">()</span>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_newapi-fengmap_node_layer_FMLocationMarkerLayer.js.html#l1"><code>..\jssdk\src\newapi-fengmap\node_layer\FMLocationMarkerLayer.js:1</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                </div>
+            
+        </div>
+
+        
+            <div id="method" class="tab-pane">
+               <!-- <h2 class="off-left">Methods</h2> -->
+
+                
+                    <div id="method_addMarker" class="method item">
+    <h3 class="name">addMarker</h3>
+    <code>
+    addMarker
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        marker
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_newapi-fengmap_node_layer_FMLocationMarkerLayer.js.html#l20"><code>..\jssdk\src\newapi-fengmap\node_layer\FMLocationMarkerLayer.js:20</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>添加定位标注</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">marker</code>
+                       <td> <span class="type"><a href="..\classes\fengmap.FMLocationMarker.html" class="crosslink">fengmap.FMLocationMarker</a></span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>此图层可为FMLocationMarker对象</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_flash" class="method item inherited">
+    <h3 class="name">flash</h3>
+    <code>
+    flash
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        time
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        scale
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                <p>此方法继承自父类
+                <a href="..\classes\fengmap.FMNode.html#method_flash">fengmap.FMNode</a>:
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_newapi-fengmap_FMNode.js.html#l272"><code>..\jssdk\src\newapi-fengmap\FMNode.js:272</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>闪烁文本标注，为由小变大的动画效果，次数为1次。</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">time</code>
+                       <td> <span class="type">Float</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>闪烁时间间隔。默认0.5</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">scale</code>
+                       <td> <span class="type">Float</span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>变大级别,值越大标签越大。默认1.5</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_removeAll" class="method item">
+    <h3 class="name">removeAll</h3>
+    <code>
+    removeAll
+    
+        <span class="paren">()</span>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_newapi-fengmap_node_layer_FMLocationMarkerLayer.js.html#l73"><code>..\jssdk\src\newapi-fengmap\node_layer\FMLocationMarkerLayer.js:73</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>移除该层的所有定位标注</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_removeMarker" class="method item">
+    <h3 class="name">removeMarker</h3>
+    <code>
+    removeMarker
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        marker
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+    </code>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!--Defined in-->
+                
+            
+        
+        
+        <!--<a href="../files/.._jssdk_src_newapi-fengmap_node_layer_FMLocationMarkerLayer.js.html#l60"><code>..\jssdk\src\newapi-fengmap\node_layer\FMLocationMarkerLayer.js:60</code></a>-->
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description well well-small sign-left3">
+        <div class="stdoc-code"><p>移除单个定位标注</p>
+</div>
+    </div>
+
+    
+        <div class="params">
+            <h4>参数:</h4>
+
+            <table class="table table-bordered">
+            <tr class='active'><th>名称</th><th>类型</th><th>标记</th><th>描述</th></tr>
+            
+                <tr class="param">
+                    
+                       <td> <code class="param-name">marker</code>
+                       <td> <span class="type"><a href="..\classes\fengmap.FMLocationMarker.html" class="crosslink">fengmap.FMLocationMarker</a></span>
+                       <td>
+                    
+
+                    
+                    </td>
+                    <td><div class="param-description">
+                        <p>此图层可为已添加的某个FMLocationMarker对象</p>
+
+                    </div>
+
+                    
+                </tr>
+            
+            </table>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+            </div>
+        
+
+        
+            <div id="property" class="tab-pane">
+              <!--  <h2 class="off-left">Properties</h2> -->
+
+                
+                    <div id="property_groupID" class="property item inherited">
+    <h3 class="name"><code>groupID</code></h3>
+    <span class="type">Int</span>
+
+    
+
+    
+
+    
+        <span class="flag final">只读</span>
+    
+
+    
+
+    <div class="meta">
+        
+            
+                <p>此属性继承自父类
+                <a href="..\classes\fengmap.FMNode.html#property_groupID">fengmap.FMNode</a>:
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_newapi-fengmap_FMNode.js.html#l192"><code>..\jssdk\src\newapi-fengmap\FMNode.js:192</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>获取地图元素所在模型楼层ID</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_height" class="property item inherited">
+    <h3 class="name"><code>height</code></h3>
+    <span class="type">Int 高度值</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                <p>此属性继承自父类
+                <a href="..\classes\fengmap.FMNode.html#property_height">fengmap.FMNode</a>:
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_newapi-fengmap_FMNode.js.html#l205"><code>..\jssdk\src\newapi-fengmap\FMNode.js:205</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>地图元素的高度</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_mapCoord" class="property item inherited">
+    <h3 class="name"><code>mapCoord</code></h3>
+    <span class="type">Object 返回FMMapCoord地图坐标对象</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                <p>此属性继承自父类
+                <a href="..\classes\fengmap.FMNode.html#property_mapCoord">fengmap.FMNode</a>:
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_newapi-fengmap_FMNode.js.html#l137"><code>..\jssdk\src\newapi-fengmap\FMNode.js:137</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>地图元素中心点对应地图坐标对象</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_markers" class="property item">
+    <h3 class="name"><code>markers</code></h3>
+    <span class="type">Array</span>
+
+    
+
+    
+
+    
+        <span class="flag final">只读</span>
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                <!-- Defined in -->
+                
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_newapi-fengmap_node_layer_FMLocationMarkerLayer.js.html#l82"><code>..\jssdk\src\newapi-fengmap\node_layer\FMLocationMarkerLayer.js:82</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>该层的所有定位标注集合数组</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_nodeType" class="property item inherited">
+    <h3 class="name"><code>nodeType</code></h3>
+    <span class="type">Object 返回FMNodeType类型对象</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                <p>此属性继承自父类
+                <a href="..\classes\fengmap.FMNode.html#property_nodeType">fengmap.FMNode</a>:
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_newapi-fengmap_FMNode.js.html#l26"><code>..\jssdk\src\newapi-fengmap\FMNode.js:26</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>地图元素类型</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_visible" class="property item inherited">
+    <h3 class="name"><code>visible</code></h3>
+    <span class="type">Boolean true可见，false不可见</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                <p>此属性继承自父类
+                <a href="..\classes\fengmap.FMNode.html#property_visible">fengmap.FMNode</a>:
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_newapi-fengmap_FMNode.js.html#l158"><code>..\jssdk\src\newapi-fengmap\FMNode.js:158</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>地图元素可见/隐藏</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_x" class="property item inherited">
+    <h3 class="name"><code>x</code></h3>
+    <span class="type">Float</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                <p>此属性继承自父类
+                <a href="..\classes\fengmap.FMNode.html#property_x">fengmap.FMNode</a>:
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_newapi-fengmap_FMNode.js.html#l74"><code>..\jssdk\src\newapi-fengmap\FMNode.js:74</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>地图元素中心点对应地图坐标x,</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_y" class="property item inherited">
+    <h3 class="name"><code>y</code></h3>
+    <span class="type">Float</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                <p>此属性继承自父类
+                <a href="..\classes\fengmap.FMNode.html#property_y">fengmap.FMNode</a>:
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_newapi-fengmap_FMNode.js.html#l96"><code>..\jssdk\src\newapi-fengmap\FMNode.js:96</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>地图元素中心点对应地图坐标y</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_z" class="property item inherited">
+    <h3 class="name"><code>z</code></h3>
+    <span class="type">Float</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                <p>此属性继承自父类
+                <a href="..\classes\fengmap.FMNode.html#property_z">fengmap.FMNode</a>:
+            
+        
+        
+         <!-- <a href="../files/.._jssdk_src_newapi-fengmap_FMNode.js.html#l118"><code>..\jssdk\src\newapi-fengmap\FMNode.js:118</code></a> -->
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <div class="stdoc-code"><p>地图元素中心点对应地图坐标z</p>
+</div>
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+            </div>
+        
+
+        
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<a id="gotoTop" class='well well-small' href='#'>
+    Top
+</a>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/config.js"></script>
+<script src="../assets/js/doc.js"></script>
+</body>
+</html>
